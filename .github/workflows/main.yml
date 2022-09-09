@@ -19,7 +19,7 @@ jobs:
       - name: Generate PNGs
         run: |
           sudo apt install poppler-utils
-          pdftoppm -png cv.pdf cv
+          pdftoppm -png -singlefile cv.pdf cv
 
       - name: Check output
         run: ls
@@ -30,4 +30,4 @@ jobs:
         with:
           files: |
             cv.pdf
-            cv-1.png
+            cv.png
