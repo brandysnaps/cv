@@ -3,4 +3,4 @@
 all
 
 # Ignore line length in code blocks.
-rule 'MD013'
+exclude_rule 'MD013'
