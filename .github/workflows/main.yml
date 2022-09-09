@@ -1,6 +1,8 @@
 name: LaTeX
 
-on: [push]
+on:
+  - push:
+  - workflow_dispatch:
 
 jobs:
   build_latex:
@@ -14,6 +16,11 @@ jobs:
           root_file: cv.tex
           latexmk_use_xelatex: true
 
+      - name: Generate PNGs
+        run: |
+          sudo apt install poppler-utils
+          pdftoppm -png cv.pdf cv
+
       - name: Check output
         run: ls
 
@@ -21,4 +28,6 @@ jobs:
         uses: softprops/action-gh-release@v1
         if: startsWith(github.ref, 'refs/tags/')
         with:
-          files: cv.pdf
+          files: |
+            cv.pdf
+            cv-1.png
