@@ -5,4 +5,4 @@
 
 Click below to download
 
-[![Download CV](https://github.com/brandysnaps/CV/releases/latest/download/cv-1.png)](https://github.com/brandysnaps/CV/releases/latest/download/cv.pdf)
+[![Download CV](https://github.com/brandysnaps/CV/releases/latest/download/cv.png)](https://github.com/brandysnaps/CV/releases/latest/download/cv.pdf)
