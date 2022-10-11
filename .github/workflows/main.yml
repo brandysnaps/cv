@@ -19,7 +19,7 @@ jobs:
       - name: Generate PNGs
         run: |
           sudo apt install poppler-utils
-          pdftoppm -png -singlefile cv.pdf cv
+          pdftoppm -png -singlefile brandon-farrell-cv.pdf brandon-farrell-cv
 
       - name: Check output
         run: ls
@@ -29,5 +29,5 @@ jobs:
         if: startsWith(github.ref, 'refs/tags/')
         with:
           files: |
-            cv.pdf
-            cv.png
+            brandon-farrell-cv.pdf
+            brandon-farrell-cv.png

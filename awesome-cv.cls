@@ -54,7 +54,7 @@
 \RequirePackage{ragged2e}
 % Needed to configure page layout
 \RequirePackage{geometry}
-% Needed to make header & footer effeciently
+% Needed to make header & footer efficiently
 \RequirePackage{fancyhdr}
 % Needed to manage colors
 \RequirePackage{xcolor}
@@ -277,7 +277,7 @@
 \newcommand*{\mobile}[1]{\def\@mobile{#1}}
 
 % Defines writer's email (optional)
-% Usage: \email{<email adress>}
+% Usage: \email{<email address>}
 \newcommand*{\email}[1]{\def\@email{#1}}
 
 % Defines writer's homepage (optional)
@@ -318,8 +318,8 @@
 \newcommand*{\xing}[1]{\def\@xing{#1}}
 
 % Defines writer's twitter (optional)
-% Defines writer's extra informations (optional)
-% Usage: \extrainfo{<extra informations>}
+% Defines writer's extra information (optional)
+% Usage: \extrainfo{<extra information>}
 \newcommand*{\extrainfo}[1]{\def\@extrainfo{#1}}
 
 % Defines writer's quote (optional)
