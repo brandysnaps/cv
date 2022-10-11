@@ -13,7 +13,7 @@ jobs:
       - name: Build LaTeX
         uses: xu-cheng/latex-action@v2
         with:
-          root_file: cv.tex
+          root_file: brandon-farrell-cv.tex
           latexmk_use_xelatex: true
 
       - name: Generate PNGs
